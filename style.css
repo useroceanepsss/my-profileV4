@@ -1,0 +1,128 @@
+Style css
+
+/* ===== Base de la page ===== */
+body {
+  background-color: #f4f5f9;
+  font-family: Georgia, serif;
+  color: #4a4a6a;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Titres ===== */
+h1, h2, h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: #C4A4DA;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+h2 {
+  color: #AA5E7A;
+  font-size: 22px;
+}
+
+/* ===== Liens ===== */
+a {
+  color: #6b72e1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e67e22;
+}
+
+/* ===== Conteneur : centre la page ===== */
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+/* ===== Cartes blanches ===== */
+.card-white {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-white:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Espace sous les paragraphes des cartes (sélecteur descendant) */
+.card-white p {
+  margin-bottom: 30px;
+}
+
+/* ===== Classe réutilisable : texte centré ===== */
+.text-center {
+  text-align: center;
+}
+
+/* ===== Photo de profil ronde ===== */
+.img-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ===== Bouton ===== */
+.btn-blue {
+  display: inline-block;
+  background-color: #6b72e1;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+  background-color: #4f56c9;
+  color: white;
+}
+
+/* ===== Icônes des réseaux à l'horizontale ===== */
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-inline > li {
+  display: inline;
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+/* ===== Responsive : la largeur du conteneur s'adapte à l'écran ===== */
+@media (max-width: 960px) {
+  /* Écran de moins de 960px */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Écran de moins de 720px */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Écran de moins de 540px */
+  .container {
+    width: 300px;
+  }
+}
